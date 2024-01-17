@@ -1,0 +1,391 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Linear Layout to hold groups horizontally -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="@string/control"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:padding="5sp"
+            android:paddingStart="10sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/on" />
+
+                <Button
+                    android:id="@+id/btnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/off" />
+
+                <Button
+                    android:id="@+id/btnSos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/sos" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FF5722" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="@string/blinking"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:padding="5sp"
+            android:paddingStart="10sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRandom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/random" />
+
+                <Button
+                    android:id="@+id/btnAlt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/alternate" />
+
+                <Button
+                    android:id="@+id/btnDouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/doubleBlink" />
+
+                <Button
+                    android:id="@+id/btnFast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/fast" />
+
+                <Button
+                    android:id="@+id/btnSlow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/slow" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FF5722" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="@string/effects"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:padding="5sp"
+            android:paddingStart="10sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHeartBeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/heartbeat" />
+
+                <Button
+                    android:id="@+id/btnWaterfall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/waterfall" />
+
+                <Button
+                    android:id="@+id/btnDisco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/disco" />
+
+                <Button
+                    android:id="@+id/btnZigzag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/zigzag" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FF5722" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="@string/movies"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:padding="5sp"
+            android:paddingStart="10sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnStarWars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/star_wars" />
+
+                <Button
+                    android:id="@+id/btnTetris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/tetris" />
+
+                <Button
+                    android:id="@+id/btnHarryPotter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/harry_potter" />
+
+                <Button
+                    android:id="@+id/btnStarTrek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/star_trek" />
+
+                <Button
+                    android:id="@+id/btnJamesBond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/james_bond" />
+
+                <Button
+                    android:id="@+id/btnIndianaJones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/indiana_jones" />
+
+                <Button
+                    android:id="@+id/btnJurassicPark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/jurassic_park" />
+
+                <Button
+                    android:id="@+id/btnLotr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/lord_of_the_rings" />
+
+                <Button
+                    android:id="@+id/btnMatrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/matrix" />
+
+                <Button
+                    android:id="@+id/btnAvengers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/avengers" />
+
+                <Button
+                    android:id="@+id/btnPotc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/pirates_of_the_caribbean" />
+
+                <Button
+                    android:id="@+id/btnBtf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/back_to_the_future" />
+
+                <Button
+                    android:id="@+id/btnEt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/e_t" />
+
+                <Button
+                    android:id="@+id/btnGhostBusters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/ghost_busters" />
+
+                <Button
+                    android:id="@+id/btnBatman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/batman" />
+
+                <Button
+                    android:id="@+id/btnFrozen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/frozen" />
+
+                <Button
+                    android:id="@+id/btnLionKing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="2"
+                    android:text="@string/lion_king" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FF5722" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            android:text="@string/brightness"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:max="100"/>-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="10sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/stop"
+            android:src="@drawable/stop_icon" />
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

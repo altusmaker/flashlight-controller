@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Linear Layout to hold groups horizontally -->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/colors"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:padding="5sp"
+                android:paddingStart="10sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/white" />
+
+                    <Button
+                        android:id="@+id/btnGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/gray" />
+
+                    <Button
+                        android:id="@+id/btnBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/black" />
+
+                    <Button
+                        android:id="@+id/btnBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/blue" />
+
+                    <Button
+                        android:id="@+id/btnRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/red" />
+
+                    <Button
+                        android:id="@+id/btnGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/green" />
+
+                    <Button
+                        android:id="@+id/btnYellow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/yellow" />
+
+                    <Button
+                        android:id="@+id/btnMagenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/magenta" />
+
+                    <Button
+                        android:id="@+id/btnCyan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/cyan" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF5722" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/blinking"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:padding="5sp"
+                android:paddingStart="10sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRandom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/random" />
+
+                    <Button
+                        android:id="@+id/btnAlt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/alternate" />
+
+                    <Button
+                        android:id="@+id/btnFast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/fast" />
+
+                    <Button
+                        android:id="@+id/btnSlow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/slow" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF5722" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/effects"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:padding="5sp"
+                android:paddingStart="10sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnDisco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/disco" />
+
+                    <Button
+                        android:id="@+id/btnPoliceSiren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_weight="2"
+                        android:text="@string/police_siren" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF5722" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/brightness"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:max="100"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/viewColorDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
